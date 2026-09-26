@@ -8,8 +8,6 @@ export const profile = {
   location: "Athens, Greece",
   university: "National and Kapodistrian University of Athens",
   degree: "B.Sc. Computer Science",
-  gpa: "3.90 / 4.00",
-  graduation: "Expected 08/2026",
   degreeFocus: "Artificial Intelligence, Software Engineering, Advanced Mathematics",
   email: "adamshawky2323@gmail.com",
   links: {
@@ -20,7 +18,7 @@ export const profile = {
       "https://drive.google.com/file/d/1E9eRiymPsypbKvxpDnX7scf8je_JTuw8/view?usp=sharing",
   },
   about: [
-    "I'm an AI Solutions Engineer and full-stack developer finishing a Computer Science degree (3.90 GPA) at the National and Kapodistrian University of Athens, focused on Artificial Intelligence and Software Engineering.",
+    "I'm an AI Solutions Engineer and full-stack developer finishing a Computer Science degree at the National and Kapodistrian University of Athens, focused on Artificial Intelligence and Software Engineering.",
     "I co-founded HERAGLYPH, where I architect agentic AI systems -- multi-agent workflows built with LangGraph, CrewAI, and AutoGen -- that automate real operations for 30+ client businesses, from LLM integration to production deployment.",
     "Alongside that, I've built full-stack banking-adjacent software as an engineering intern at CIB Egypt, designed high-conversion sites as a contract web builder, and used my own time to go deep on things HERAGLYPH doesn't touch: fine-tuning transformers from scratch, benchmarking prompting strategies at scale, and low-level systems programming in C -- because I want to understand what's actually happening under the abstraction, not just call an API.",
   ],

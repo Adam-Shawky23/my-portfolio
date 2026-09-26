@@ -29,12 +29,6 @@ export default function About() {
                 <span className="text-foreground">degree:</span> {profile.degree}
               </li>
               <li>
-                <span className="text-foreground">gpa:</span> {profile.gpa}
-              </li>
-              <li>
-                <span className="text-foreground">grad:</span> {profile.graduation}
-              </li>
-              <li>
                 <span className="text-foreground">based:</span> {profile.location}
               </li>
               <li>
