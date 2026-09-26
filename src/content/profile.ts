@@ -15,7 +15,7 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/adam-shawky23/",
     behance: "https://www.behance.net/adamshawky1/projects",
     resume:
-      "https://drive.google.com/file/d/1E9eRiymPsypbKvxpDnX7scf8je_JTuw8/view?usp=sharing",
+      "https://drive.google.com/file/d/11jhOvlL_etMT8PqQhpjdYtDmblN9CdB7/view?usp=sharing",
   },
   about: [
     "I'm an AI Solutions Engineer and full-stack developer finishing a Computer Science degree at the National and Kapodistrian University of Athens, focused on Artificial Intelligence and Software Engineering.",
