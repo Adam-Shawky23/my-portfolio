@@ -27,6 +27,18 @@ export const projects: Project[] = [
     status: "Active",
   },
   {
+    slug: "eventflow",
+    title: "EventFlow",
+    tagline: "Full-stack event management and ticket booking platform",
+    description:
+      "A four-role (admin/organizer/participant/guest) event platform with real-time capacity-enforced bookings, an OpenStreetMap-integrated venue view, and a custom Biased Matrix Factorization recommendation engine written from scratch -- no ML libraries. Built end to end: auth, uploads, messaging, and CI/CD.",
+    category: "fullstack",
+    tech: ["NestJS", "Prisma", "PostgreSQL", "React", "Vite", "Leaflet.js"],
+    href: "https://github.com/Adam-Shawky23/event-flow",
+    demoHref: "https://eventflowfg.netlify.app",
+    featured: true,
+  },
+  {
     slug: "d3-agentic-evasion-detection",
     title: "D3-Agentic Evasion Detection",
     tagline: "Fine-tuned transformers vs. a custom 4-agent LLM reasoning pipeline",
@@ -36,6 +48,46 @@ export const projects: Project[] = [
     tech: ["PyTorch", "Transformers", "DSPy", "Qwen3.5", "BERT/DeBERTa"],
     href: "https://github.com/Adam-Shawky23/d3-agentic-evasion-detection",
     featured: true,
+  },
+  {
+    slug: "kindred",
+    title: "Kindred",
+    tagline: "A Facebook-style social network, built from scratch",
+    description:
+      "An independent full-stack social platform covering activity feeds, a friend graph, profiles, comments, reactions, post sharing, and notifications. Enforces three-tier post visibility (public/friends/private) server-side in the query layer rather than the view, implements cursor-based pagination with a tie-breaker to prevent duplicate rows, and backs rotating refresh tokens with a Redis revocation list for instant logout. 121 automated tests across server and client.",
+    category: "fullstack",
+    tech: ["React", "TypeScript", "Node.js/Express", "PostgreSQL/Prisma", "Redis"],
+    href: "https://github.com/Adam-Shawky23/Kindred",
+  },
+  {
+    slug: "threadflow-jms",
+    title: "ThreadFlow-JMS",
+    tagline: "A Unix job management system built from scratch in C",
+    description:
+      "Multi-process job scheduler with dynamically-scaling process pools, named-pipe IPC, and POSIX signal handling (SIGSTOP/SIGCONT/SIGTERM). Implements non-blocking pipe polling, signal-safe shutdown, and a reconnect-safe console protocol -- low-level systems programming with no shortcuts.",
+    category: "systems",
+    tech: ["C", "POSIX", "fork/exec", "Named Pipes", "Signals"],
+    href: "https://github.com/Adam-Shawky23/ThreadFlow-JMS",
+  },
+  {
+    slug: "plan-and-execute-agent",
+    title: "Plan-and-Execute Agent",
+    tagline: "A local-only autonomous agent -- zero cloud API keys",
+    description:
+      "A from-scratch agent that decomposes a complex task into an ordered list of subtasks, works through each one with a reason-tool-observe loop, then synthesizes a final answer. Runs entirely against a local Ollama model (Qwen2.5) with built-in shell, filesystem, DuckDuckGo search, and URL-fetch tools.",
+    category: "ai",
+    tech: ["Python", "Ollama", "Qwen2.5", "pytest"],
+    href: "https://github.com/Adam-Shawky23/Plan-and-Execute-Agent",
+  },
+  {
+    slug: "reflection-agent",
+    title: "Reflection Agent",
+    tagline: "A code agent that generates, runs, critiques, and revises its own code",
+    description:
+      "A local coding agent implementing the reflection design pattern: generate Python code, execute it to capture real output, prompt the model to critique its own result, then decide whether to stop or revise with that critique fed back in as context. Runs fully offline against a local Ollama model, with conservative verdict parsing that requires an explicit success signal before stopping.",
+    category: "ai",
+    tech: ["Python", "Ollama", "pytest"],
+    href: "https://github.com/Adam-Shawky23/Reflection-Agent",
   },
   {
     slug: "bert-clarity-classifier",
@@ -58,36 +110,24 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/prompt-engineering-llm-scaling",
   },
   {
-    slug: "eventflow",
-    title: "EventFlow",
-    tagline: "Full-stack event management and ticket booking platform",
+    slug: "streamly",
+    title: "Streamly",
+    tagline: "A full-stack Netflix-style streaming app, built from scratch",
     description:
-      "A four-role (admin/organizer/participant/guest) event platform with real-time capacity-enforced bookings, an OpenStreetMap-integrated venue view, and a custom Biased Matrix Factorization recommendation engine written from scratch -- no ML libraries. Built end to end: auth, uploads, messaging, and CI/CD.",
+      "A personal full-stack project covering the whole stack end to end: JWT authentication, multiple profiles per account, a Node.js/Express API, and a React frontend with a live, browsable catalog UI modeled on Netflix's interface.",
     category: "fullstack",
-    tech: ["NestJS", "Prisma", "PostgreSQL", "React", "Vite", "Leaflet.js"],
-    href: "https://github.com/Adam-Shawky23/event-flow",
-    demoHref: "https://eventflowfg.netlify.app",
-    featured: true,
+    tech: ["React", "Node.js", "Express", "JWT"],
+    href: "https://github.com/Adam-Shawky23/streamly-netflix-clone",
   },
   {
-    slug: "threadflow-jms",
-    title: "ThreadFlow-JMS",
-    tagline: "A Unix job management system built from scratch in C",
+    slug: "stayfinder",
+    title: "StayFinder",
+    tagline: "An Airbnb-style stay-booking app, built with React",
     description:
-      "Multi-process job scheduler with dynamically-scaling process pools, named-pipe IPC, and POSIX signal handling (SIGSTOP/SIGCONT/SIGTERM). Implements non-blocking pipe polling, signal-safe shutdown, and a reconnect-safe console protocol -- low-level systems programming with no shortcuts.",
-    category: "systems",
-    tech: ["C", "POSIX", "fork/exec", "Named Pipes", "Signals"],
-    href: "https://github.com/Adam-Shawky23/ThreadFlow-JMS",
-  },
-  {
-    slug: "voice-ai-meeting-scheduler",
-    title: "Voice AI Meeting Scheduler",
-    tagline: "The action layer behind a voice AI phone assistant",
-    description:
-      "A webhook-driven workflow that takes structured fields extracted mid-call by a voice AI platform and turns them into a real scheduled meeting: an LLM agent books the Google Calendar event with correct timezone handling, logs it to Sheets, and fires confirmation emails to both parties -- closing the loop from conversation to calendar.",
-    category: "ai",
-    tech: ["n8n", "GPT-3.5", "Google Calendar API", "Google Sheets API"],
-    href: "https://github.com/Adam-Shawky23/Voice-AI-Meeting-Scheduler-Calendar-Sheets-Email-n8n-GPT-3.5-",
+      "A responsive accommodation booking app: search and filter listings by location, dates, and preferences, browse detail pages with galleries and reviews, book date ranges with live price calculations, manage a wishlist, and review past bookings. Backed by a mocked API layer (MSW) and an interactive Leaflet map.",
+    category: "fullstack",
+    tech: ["React 19", "React Router", "Tailwind CSS", "MSW", "Leaflet"],
+    href: "https://github.com/Adam-Shawky23/StayFinder-AirBnb-Clone-",
   },
   {
     slug: "automated-short-form-video-pipeline",
@@ -100,16 +140,6 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/Automated-Short-Form-Video-Pipeline",
   },
   {
-    slug: "instagram-dm-customer-service-bot",
-    title: "Instagram DM Customer Service Bot",
-    tagline: "AI-handled Instagram DMs for a fashion brand, with human handoff",
-    description:
-      "An AI customer service agent that runs a fashion brand's Instagram DMs end to end -- product Q&A, order requests, sizing, and FAQs -- built on Gemini agent nodes in n8n, with a smart handoff to a human teammate via Telegram whenever the bot shouldn't resolve the conversation itself.",
-    category: "ai",
-    tech: ["n8n", "Gemini", "ManyChat API", "Telegram Bot API"],
-    href: "https://github.com/Adam-Shawky23/Instagram-Brand-AI-Customer-Service-Chatbot-for-Instagram-DMs",
-  },
-  {
     slug: "voice-image-shopping-assistant",
     title: "Voice & Image Shopping Assistant",
     tagline: "Order by text, voice note, or photo -- all on WhatsApp",
@@ -120,14 +150,24 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/Voice-Image-Shopping-Assistant-for-WhatsApp",
   },
   {
-    slug: "streamly",
-    title: "Streamly",
-    tagline: "A full-stack Netflix-style streaming app, built from scratch",
+    slug: "voice-ai-meeting-scheduler",
+    title: "Voice AI Meeting Scheduler",
+    tagline: "The action layer behind a voice AI phone assistant",
     description:
-      "A personal full-stack project covering the whole stack end to end: JWT authentication, multiple profiles per account, a Node.js/Express API, and a React frontend with a live, browsable catalog UI modeled on Netflix's interface.",
-    category: "fullstack",
-    tech: ["React", "Node.js", "Express", "JWT"],
-    href: "https://github.com/Adam-Shawky23/streamly-netflix-clone",
+      "A webhook-driven workflow that takes structured fields extracted mid-call by a voice AI platform and turns them into a real scheduled meeting: an LLM agent books the Google Calendar event with correct timezone handling, logs it to Sheets, and fires confirmation emails to both parties -- closing the loop from conversation to calendar.",
+    category: "ai",
+    tech: ["n8n", "GPT-3.5", "Google Calendar API", "Google Sheets API"],
+    href: "https://github.com/Adam-Shawky23/Voice-AI-Meeting-Scheduler-Calendar-Sheets-Email-n8n-GPT-3.5-",
+  },
+  {
+    slug: "instagram-dm-customer-service-bot",
+    title: "Instagram DM Customer Service Bot",
+    tagline: "AI-handled Instagram DMs for a fashion brand, with human handoff",
+    description:
+      "An AI customer service agent that runs a fashion brand's Instagram DMs end to end -- product Q&A, order requests, sizing, and FAQs -- built on Gemini agent nodes in n8n, with a smart handoff to a human teammate via Telegram whenever the bot shouldn't resolve the conversation itself.",
+    category: "ai",
+    tech: ["n8n", "Gemini", "ManyChat API", "Telegram Bot API"],
+    href: "https://github.com/Adam-Shawky23/Instagram-Brand-AI-Customer-Service-Chatbot-for-Instagram-DMs",
   },
 ];
 
