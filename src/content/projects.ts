@@ -130,6 +130,16 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/StayFinder-AirBnb-Clone-",
   },
   {
+    slug: "travel-log",
+    title: "Travel Log",
+    tagline: "A full-stack trip-logging app with map pins and public sharing",
+    description:
+      "A travel journal app: log trips with click-to-pin locations on a Leaflet map (no API keys required), attach validated photos via Multer, and toggle any trip public for a no-login share link with one-click email/WhatsApp sharing. JWT auth with bcrypt-hashed passwords, and ownership enforced server-side -- 403 on someone else's trip, 404 (not 403) on private ones to avoid leaking existence. Covered by Jest/Supertest on the API and Vitest/RTL on the frontend.",
+    category: "fullstack",
+    tech: ["React", "Vite", "Node.js/Express", "MongoDB/Mongoose", "Leaflet", "JWT"],
+    href: "https://github.com/Adam-Shawky23/Travel-Log",
+  },
+  {
     slug: "automated-short-form-video-pipeline",
     title: "Automated Short-Form Video Pipeline",
     tagline: "A one-line idea in, a finished captioned video out",
