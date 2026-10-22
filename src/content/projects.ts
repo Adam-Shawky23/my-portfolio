@@ -140,6 +140,17 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/Travel-Log",
   },
   {
+    slug: "muscleup",
+    title: "MuscleUp",
+    tagline: "A native iOS workout logger I built for my own powerlifting training",
+    description:
+      "Notes, but for the gym. A SwiftUI + SwiftData iPhone and iPad app: one-tap \"up next\" workouts that follow a training rotation, sets pre-filled with last session's numbers, live PR detection, and a records screen that puts squat, bench and deadlift first. Body weight and goals sit next to strength, so weight class and progress read together. Offline first -- data lives on the phone and syncs to a Supabase account (email auth, Postgres row-level security) after every workout. No third-party dependencies; 114 Swift Testing tests.",
+    category: "fullstack",
+    tech: ["Swift", "SwiftUI", "SwiftData", "Supabase", "Swift Testing"],
+    href: "https://github.com/Adam-Shawky23/Muscle-Up-Project",
+    demoHref: "/projects/muscleup-demo.mp4",
+  },
+  {
     slug: "automated-short-form-video-pipeline",
     title: "Automated Short-Form Video Pipeline",
     tagline: "A one-line idea in, a finished captioned video out",
