@@ -129,6 +129,7 @@ export const profile = {
       "UI/UX Design",
     ],
     "Data & Backend": ["PostgreSQL", "Prisma", "REST APIs", "SQL"],
+    "Cloud (AWS)": ["EC2", "S3", "IAM", "VPC", "Lambda", "Amazon Lex"],
     "Systems / CS Fundamentals": [
       "POSIX (IPC, signals, threads)",
       "Concurrency",

@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-24">
       <Reveal>
-        <p className="font-mono text-sm text-accent">07. Contact</p>
+        <p className="font-mono text-sm text-accent">08. Contact</p>
         <h2 className="mt-1 text-2xl font-semibold text-foreground sm:text-3xl">
           Let&apos;s talk
         </h2>

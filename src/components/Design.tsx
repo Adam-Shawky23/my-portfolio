@@ -10,7 +10,7 @@ export default function Design() {
       <Reveal>
         <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="font-mono text-sm text-accent">04. Design Work</p>
+            <p className="font-mono text-sm text-accent">05. Design Work</p>
             <h2 className="mt-1 text-2xl font-semibold text-foreground sm:text-3xl">
               UI/UX &amp; web design
             </h2>

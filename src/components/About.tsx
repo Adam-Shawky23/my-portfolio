@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="mx-auto max-w-5xl px-6 py-24">
       <Reveal>
-        <p className="font-mono text-sm text-accent">06. About</p>
+        <p className="font-mono text-sm text-accent">07. About</p>
         <h2 className="mt-1 text-2xl font-semibold text-foreground sm:text-3xl">
           A bit more context
         </h2>

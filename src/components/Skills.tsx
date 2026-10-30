@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-5xl px-6 py-24">
       <Reveal>
-        <p className="font-mono text-sm text-accent">05. Skills</p>
+        <p className="font-mono text-sm text-accent">06. Skills</p>
         <h2 className="mt-1 text-2xl font-semibold text-foreground sm:text-3xl">
           What I work with
         </h2>

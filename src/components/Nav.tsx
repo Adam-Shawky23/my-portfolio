@@ -10,6 +10,7 @@ import { scrollToSection } from "@/lib/scrollTo";
 const links = [
   { id: "experience", label: "experience" },
   { id: "projects", label: "projects" },
+  { id: "cloud", label: "cloud" },
   { id: "design", label: "design" },
   { id: "skills", label: "skills" },
   { id: "about", label: "about" },

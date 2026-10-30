@@ -12,6 +12,7 @@ const sections = [
   { id: "hero", label: "Home" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "cloud", label: "Cloud / AWS" },
   { id: "design", label: "Design Work" },
   { id: "skills", label: "Skills" },
   { id: "about", label: "About" },
