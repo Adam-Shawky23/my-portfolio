@@ -151,6 +151,16 @@ export const projects: Project[] = [
     demoHref: "/projects/muscleup-demo.mp4",
   },
   {
+    slug: "fresh-cut-hairstyle-tryon",
+    title: "Fresh Cut",
+    tagline: "AI hairstyle try-on for a real barbershop",
+    description:
+      "Customers snap a selfie, pick a cut (skin fade, buzz cut, afro, braids...) or describe their own, and FLUX.1 Kontext shows them wearing it while keeping their face, clothes and background intact. They star favourites in a lookbook and show the barber. Runs entirely on free tiers: an Express API chains pluggable AI providers (Hugging Face Space, then Cloudflare Workers AI, then optional fal.ai/Gemini) with a 5-minute busy cooldown, a per-connection fair-use limiter, and AbortSignal cancellation so abandoned generations don't burn quota. No accounts, no database, photos never stored; installable PWA for iOS and Android. 115 tests.",
+    category: "ai",
+    tech: ["React", "TypeScript", "Node.js/Express", "FLUX.1 Kontext", "Vitest"],
+    href: "https://github.com/Adam-Shawky23/Barber-Cuts-Demo",
+  },
+  {
     slug: "automated-short-form-video-pipeline",
     title: "Automated Short-Form Video Pipeline",
     tagline: "A one-line idea in, a finished captioned video out",
