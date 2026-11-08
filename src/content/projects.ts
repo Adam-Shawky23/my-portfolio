@@ -161,6 +161,16 @@ export const projects: Project[] = [
     href: "https://github.com/Adam-Shawky23/Barber-Cuts-Demo",
   },
   {
+    slug: "hurghada-explore",
+    title: "Hurghada Explore",
+    tagline: "A live booking website for a Red Sea tour company",
+    description:
+      "A production site for a real tour operator in Hurghada, Egypt: desert safaris, private speedboats, island hopping and day trips. Built by hand in HTML, CSS and vanilla JavaScript with no framework. A booking widget adapts to each tour (group-size limits, tour-specific fields) and turns the request into a pre-filled WhatsApp or email message, so customers book in one tap with no prepayment. Over 80 pages across English, German and Russian (hreflang), with dedicated tour pages, travel guides, schema.org structured data (TouristTrip, FAQPage, ratings) and a sitemap for SEO, plus GA4 conversion tracking on every booking click, a tour-video lightbox and a Three.js hero effect. Installable as a PWA.",
+    category: "fullstack",
+    tech: ["HTML", "CSS", "JavaScript", "Three.js", "SEO / schema.org", "GA4"],
+    href: "https://www.hurghada-explore.com",
+  },
+  {
     slug: "automated-short-form-video-pipeline",
     title: "Automated Short-Form Video Pipeline",
     tagline: "A one-line idea in, a finished captioned video out",
